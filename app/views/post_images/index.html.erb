@@ -1,0 +1,11 @@
+    <% @post_images.each do |post_image| %>
+    <%= link_to post_image_path(post_image.id) do %>
+                  <%= attachment_image_tag post_image, :image %>
+                <div class="block-content">
+                  <p><%= post_image.caption %></p>
+                <li>By
+                  <%= post_image.user.name %>
+                </li>
+    <% end %>
+    <% end %>
+

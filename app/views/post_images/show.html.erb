@@ -1,0 +1,7 @@
+
+<h2>画像</h2>
+<%= attachment_image_tag @post_image, :image %>
+
+<% if @post_image.user == current_user %>
+  <%= link_to "削除", post_image_path(@post_image), method: :delete, "data-confirm" => "本当に削除しますか？" %>
+<% end %>

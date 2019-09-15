@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :users, only: [:index,:show, :edit, :update]
   resources :post_images, only: [:new, :create, :index, :show, :destroy] do
   resource :post_comments, only: [:create, :destroy]
-  
+  resource :likes, only: [:create, :destroy]
 end
   root 'users#top'
   root to: 'calendar#index'

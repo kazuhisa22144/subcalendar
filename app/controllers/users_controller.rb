@@ -24,6 +24,15 @@ class UsersController < ApplicationController
     @users = User.search(params[:search])
   end
 
+  def destroy
+  	@user = User.find(params[:id])
+  	@user.destroy
+  	redirect_to post_images_path
+  end
+
+  def leave
+  end
+
   private 
     def user_params
         params.require(:user).permit(:name, :profile_image)

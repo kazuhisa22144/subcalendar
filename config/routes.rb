@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resource :post_comments, only: [:create, :destroy]
   resource :likes, only: [:create, :destroy]
 end
-  root 'users#top'
+  root 'post_images#top'
   root to: 'calendar#index'
   get 'calendar/index'
   get 'events', to: 'event#show'

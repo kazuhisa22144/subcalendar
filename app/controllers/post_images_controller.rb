@@ -3,6 +3,9 @@ class PostImagesController < ApplicationController
     def top
     end
 
+    def top2
+    end
+
     def new
         @post_image = PostImage.new
     end

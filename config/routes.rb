@@ -11,5 +11,6 @@ end
   root to: 'calendar#index'
   get 'calendar/index'
   get 'events', to: 'event#show'
+  get 'post_images_top2', to: 'post_images#top2'
   post 'events/create', to: 'event#create'
 end

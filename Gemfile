@@ -69,3 +69,4 @@ gem "refile-mini_magick"
 gem "jquery-rails"
 gem 'momentjs-rails'
 gem 'fullcalendar-rails'
+gem 'kaminari'

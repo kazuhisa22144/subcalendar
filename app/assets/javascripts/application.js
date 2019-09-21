@@ -17,3 +17,12 @@
 //= require moment
 //= require fullcalendar
 //= require_tree .
+$(function() {
+ 
+    $('.menu-trigger').on('click', function() {
+      $(this).toggleClass('active');
+      $('#sp-menu').fadeToggle();
+      return false;
+    });
+   
+   });

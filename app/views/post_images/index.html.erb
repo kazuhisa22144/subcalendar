@@ -1,5 +1,5 @@
+<h1>一覧</h1>
 <% @post_images.each do |post_image| %>
-      <h1>一覧</h1>
             <%= link_to post_image_path(post_image.id) do %>          
                     <%= attachment_image_tag post_image, :image, :fill, 150, 150 %>
                     <div class="block-content">
@@ -19,9 +19,9 @@
               </ul>
 <% end %>
 
-        <% @all_ranks.each do |post_image| %>
-            <h1>いいねランキング</h1>
-            <%= link_to post_image_path(post_image.id) do %>
+<h1>いいねランキング</h1>
+<% @all_ranks.each do |post_image| %>
+          <%= link_to post_image_path(post_image.id) do %>
             <%= attachment_image_tag post_image, :image, :fill, 150, 150 %>
             <div class="block-content">
               <p><%= post_image.caption %></p>

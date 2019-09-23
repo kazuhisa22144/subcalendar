@@ -25,7 +25,7 @@
     background-image: url(kabegami.jpg);
     background-repeat: repeat;    
     width: 100%;
-    height: auto;
+    height: 600px;
     padding-bottom: 50px;
     background-size: cover;
     min-height: 100%; 
@@ -63,6 +63,7 @@ footer{
    background-color:gray;
    color: #fff;
    text-align: center;
+   padding: 30px 0;
    position: relative;
 }
 

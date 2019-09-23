@@ -1,15 +1,10 @@
+<% if @user.id == current_user.id %>
+<h1>マイページ</h1>
+<% end %>
+
 <div class="profile-container">
     <h3 class="profile-name"><%= @user.name %></h3>
     <%= attachment_image_tag @user, :profile_image, :fill, 60, 60, format: 'jpeg', class: "img-circle pull-left profile-img", fallback: "no_image.jpg" %>
-
-    <% @post_images.each do |post_image| %>
-      <h1>ユーザー投稿一覧</h1>
-            <%= link_to post_image_path(post_image.id) do %>          
-            <%= attachment_image_tag post_image, :image, :fill, 150, 150 %>
-            <% end %>
-    <% end %>
-
-
 
   <% if @user.id == current_user.id %>
     <div id="calendar"></div>
@@ -47,3 +42,13 @@
     
   <% end %>
 </div>
+
+
+    <h1>ユーザー投稿一覧</h1>
+    <% @post_images.each do |post_image| %>
+            <div class="box17">
+            <%= link_to post_image_path(post_image.id) do %>          
+            <%= attachment_image_tag post_image, :image, :fill, 150, 150 %>
+            <% end %>
+            </div>
+    <% end %>

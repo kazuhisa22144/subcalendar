@@ -1,35 +1,40 @@
+<div class="kabegami2">
 <h1>いいねランキング</h1>
-<% @all_ranks.each do |post_image| %>
-<div class="box17">
-          <%= link_to post_image_path(post_image.id) do %>
-            <%= attachment_image_tag post_image, :image, :fill, 150, 150 %>
-            <div class="block-content">
-              <p><%= post_image.caption %>
-                <p>By
+      <% @all_ranks.each do |post_image| %>
+        <div class="postbox">
+            <%= link_to post_image_path(post_image.id) do %>
+                <%= attachment_image_tag post_image, :image, :fill, 150, 150 %>
+                <div class="block-content">
+                  <p><%= post_image.caption %>
+                    <p>By
+                      <%= post_image.user.name %>
+                    </p>
+                  </p>
+                </div>
+            <% end %>
+        </div>
+      <% end %>
+</div>
+<div class="kabegami2">    
+  <h1>投稿一覧</h1>
+      <% @post_images.each do |post_image| %>
+          <div class = "postbox">
+              <%= link_to post_image_path(post_image.id) do %>          
+                  <%= attachment_image_tag post_image, :image, :fill, 150, 150 %>
+                  <div class="block-content">
+                  <p>
+                  <%= post_image.caption %>
+                  </p>
+                  <p>By
                   <%= post_image.user.name %>
-                </p>
-              </p>
-            </div>
-        <% end %>
-</div>
-<% end %>
-
-<h1>一覧</h1>
-<% @post_images.each do |post_image| %>
-<div class="box17">
-          <%= link_to post_image_path(post_image.id) do %>          
-                    <%= attachment_image_tag post_image, :image, :fill, 150, 150 %>
-                    <div class="block-content">
-                    <p><%= post_image.caption %></p>
-                      <p>By
-                        <%= post_image.user.name %>
+                  </p>
+                  <ul class="inline-meta">
+                      <p>
+                      <%= link_to "#{post_image.post_comments.count} コメント", post_image_path(post_image.id) %>
                       </p>
-              </div>
-          <% end %>
-              <ul class="inline-meta">
-                <p>
-                  <%= link_to "#{post_image.post_comments.count} コメント", post_image_path(post_image.id) %>
-                </p>
-              </ul>
+                  </ul>
+                  </div>
+              <% end %>
+          </div>
+      <% end %>
 </div>
-<% end %>

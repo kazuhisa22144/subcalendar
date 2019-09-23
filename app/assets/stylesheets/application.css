@@ -31,3 +31,42 @@
     min-height: 100%; 
     padding-top: 50px;
 }
+.kabegami2 {
+   background-image: url(kabegami2.jpg);
+   overflow: hidden;
+}
+
+h1{
+   text-align: center;
+   margin-bottom: 50px 0;
+ }
+
+header{
+   height: 100px;
+   font-size: 20px;
+   position:fixed;
+   top: 0;
+   width: 100%;
+   background-color:gray;
+   color: #fff;
+   text-align: center;
+   padding: 30px 0;
+   position: relative;
+}
+
+footer{
+   height: 100px;
+   font-size: 20px;
+   position:fixed;
+   bottom: 0;
+   width: 100%;
+   background-color:gray;
+   color: #fff;
+   text-align: center;
+   position: relative;
+}
+
+div {
+   overflow-wrap: break-word;
+   word-wrap: break-word;
+   }

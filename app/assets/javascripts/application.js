@@ -26,3 +26,14 @@ $(function() {
     });
    
    });
+
+$(function() {
+ 
+  $('#back a').on('click',function(){
+    $('body, html').animate({
+      scrollTop:0
+    },2000);
+      return false;
+  });
+ 
+});

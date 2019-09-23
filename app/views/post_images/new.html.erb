@@ -1,3 +1,5 @@
+<div class="kabegami2">
+<h1>投稿ページ</h1>
 <div class="postarea">
 <%= form_for(@post_image, url: post_images_path) do |f| %>
   <% if @post_image %>
@@ -9,7 +11,8 @@
       <%= f.attachment_field :image %>
     </div>
   </div>
-  <%= f.text_area :caption, class:"form-control", rows:"3", placeholder:"コメントここに" %>
+  <%= f.text_area :caption, class:"form-control", rows:"10", placeholder:"コメントここに" %>
   <%= f.submit "送信", class:"btn btn-lg btn-block btn-base-1 mt-20" %>
 <% end %>
+ </div>
  </div>

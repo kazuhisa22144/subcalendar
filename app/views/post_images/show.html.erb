@@ -1,8 +1,7 @@
+<div class="kabegami2">
+<div class="showimage">
 <h1>詳細画像</h1>
 <%= attachment_image_tag @post_image, :image %>
-
-
-
 
 <div class="comment-list bt style-2" id="comments">
     <div class="float-wrapper">
@@ -13,7 +12,7 @@
 <ol>
     <% @post_image.post_comments.each do |post_comment| %>
         <li class="comment">
-            <div class="comment-body bb">
+            <div class="comment-body">
                 <div class="comment-text">
                     <div class="comment-author clearfix">
                         <a href="#" class="link-author"><%= post_comment.user.name %></a>
@@ -37,8 +36,8 @@
     </div>
     <%= f.submit "送信する", class: "btn btn-lg btn-base-1 mt-20 pull-right" %>
 <% end %>
-
-
+</div>
+<div class="kabegami2">
 <% if @post_image.liked_by?(current_user) %>
   <li>
     <%= link_to post_image_likes_path(@post_image), method: :delete do %>
@@ -58,3 +57,5 @@
 <% if @post_image.user == current_user %>
   <%= link_to "削除", post_image_path(@post_image), method: :delete, "data-confirm" => "本当に削除しますか？" %>
 <% end %>
+</div>
+</div>

@@ -11,6 +11,16 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   <body>
+
+   <header>
+      <div class="header-text">
+              <p>
+              SUBCALENDAR
+              </p>
+      </div>
+    </header>
+
+
       <ul>
       <div id="hm-icon">
          <a class="menu-trigger" href="#">
@@ -66,14 +76,12 @@
           <% end %>
     <%= yield %>
 
-   <footer class="footer style-2">
-            <div class="col">
-              <br>
-              <p class="no-margin" style="font-size: 20px;">
-              <br>
+   <footer>
+      <div class="footer-text">
+              <p>
               他人の予定から新しいものに出会えるSNS
               </p>
-            </div>
+      </div>
     </footer>
   </body>
 </html>

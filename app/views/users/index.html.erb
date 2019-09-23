@@ -1,5 +1,6 @@
-      <h1>Users</h1>
-        <div class="box17">
+ <div class="kabegami2">
+       <h1>Users</h1>
+    <div class="box17">
         <%= form_tag(users_search_path,:method => 'get') do %>
           <%= text_field_tag :search %>
           <%= submit_tag 'Search', :name => nil %>
@@ -25,7 +26,8 @@
               <%= link_to "Show", user_path(user.id) %>
               </td>
             </tr>
-          </div>
           <% end %>
         </tbody>
       </table>
+    </div>
+</div>

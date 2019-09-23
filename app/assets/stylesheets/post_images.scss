@@ -3,7 +3,39 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @charset "UTF-8";
  
+.imagebox{
+  height: 200px;
+  width: 100%;
+  background-color: orange;
+  padding-bottom: 100px;
+  margin: 0 auto;
+}
+
  
+.noticebox{
+  margin: 0 auto;
+  width:600px;
+  margin-left:auto;
+  margin-right:auto
+}
+
+.top2box {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #232323;
+  background: #fff8e8;
+  border-left: solid 10px #ffc06e;
+  width: 800px;
+  max-width: 80%;
+  top: 50%;
+  margin-top: -.5em;
+}
+.top2box p {
+  margin: 0; 
+  padding: 0;
+  display: inline-block;
+  text-align: center;
+}
  
 h1{
   text-align: center;

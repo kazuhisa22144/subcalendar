@@ -36,6 +36,11 @@
    overflow: hidden;
 }
 
+.kabegami3 {
+   background-image: url(kabegami3.jpg);
+   overflow: hidden;
+}
+
 h1{
    text-align: center;
    margin-bottom: 50px 0;

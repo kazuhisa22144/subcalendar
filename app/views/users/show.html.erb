@@ -1,3 +1,4 @@
+<div class="kabegami2">
 <% if @user.id == current_user.id %>
 <h1>マイページ</h1>
 <% end %>
@@ -7,6 +8,9 @@
     <%= attachment_image_tag @user, :profile_image, :fill, 60, 60, format: 'jpeg', class: "img-circle pull-left profile-img", fallback: "no_image.jpg" %>
 
   <% if @user.id == current_user.id %>
+    <div class="calendarbox">
+    <div class="box-title">MY CALENDAR</div>
+
     <div id="calendar"></div>
     <p>
       <%= link_to "プロフィール編集", edit_user_path(@user), class: "pull-right" %>
@@ -39,9 +43,10 @@
               });
             }
     </script>
-    
+    </div>
   <% end %>
   </div>
+</div>
 </div>
 
 

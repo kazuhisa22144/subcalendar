@@ -1,6 +1,6 @@
 <div class="box17">
 <h2>本当に退会しますか？</h2>
 <%= link_to "はい", user_path(current_user), method: :delete,
- data: {confirm: "ユーザー情報投稿内容を消去しますよろしいですか？"}, class: "btn btn-danger" %>
-<%= link_to "いいえ", edit_user_path(current_user), class: "btn btn-danger" %>
+ data: {confirm: "ユーザー情報投稿内容を消去しますよろしいですか？"}, class: "btn-sticky" %>
+<%= link_to "いいえ", edit_user_path(current_user), class: "btn-sticky" %>
 </div>

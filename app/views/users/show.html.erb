@@ -12,10 +12,13 @@
     <div class="box-title">MY CALENDAR</div>
 
     <div id="calendar"></div>
+
+    <div id="wrap5">
     <p>
-      <%= link_to "プロフィール編集", edit_user_path(@user), class: "pull-right" %>
+      <%= link_to "プロフィール編集", edit_user_path(@user), class: "btn-circle-border-double" %>
     </p>
 
+    <div class="btn-circle-border-double">
     <div id="target"></div>
     <a href="" id="ss" download="html_ss.png">スクリーンショット</a>
     </div>
@@ -43,6 +46,8 @@
               });
             }
     </script>
+    </div>
+    </div>
     </div>
   <% end %>
   </div>

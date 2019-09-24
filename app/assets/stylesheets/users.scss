@@ -58,3 +58,26 @@
     font-weight: bold;
     letter-spacing: 0.05em;
 }
+.btn-circle-border-double {
+    display: inline-block;
+    text-decoration: none;
+    color: #668ad8;
+    width: 160px;
+    height: 160px;
+    line-height: 160px;
+    border-radius: 50%;
+    border: double 4px #668ad8;
+    overflow: hidden;
+    transition: .6s;
+    text-align: center;
+  }
+  
+.btn-circle-border-double:hover {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+
+#wrap5 {
+  display: flex;
+  flex-wrap: wrap;
+}

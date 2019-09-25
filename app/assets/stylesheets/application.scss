@@ -14,7 +14,8 @@
  *= require_tree .
  *= require_self
  */
-
+   @import "bootstrap-sprockets";
+   @import "bootstrap";
  * {
     margin: 0;
     padding: 0;
@@ -47,9 +48,7 @@ h1{
  }
 
 header{
-   height: 100px;
    font-size: 20px;
-   position:fixed;
    top: 0;
    width: 100%;
    background-color:gray;
@@ -60,9 +59,7 @@ header{
 }
 
 footer{
-   height: 100px;
    font-size: 20px;
-   position:fixed;
    bottom: 0;
    width: 100%;
    background-color:gray;
@@ -76,3 +73,9 @@ div {
    overflow-wrap: break-word;
    word-wrap: break-word;
    }
+
+.login-box{
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+   }  

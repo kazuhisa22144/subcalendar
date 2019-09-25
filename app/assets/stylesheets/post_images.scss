@@ -3,16 +3,17 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @charset "UTF-8";
  
-.imagebox{
-  height: 200px;
+.profile-container{
   width: 100%;
-  background-color: orange;
-  padding-bottom: 100px;
+  margin: 0 auto;
+}
+.profile-image{
+  height: 150px;
   margin: 0 auto;
 }
 .postarea{
   height: 700px;
-  width: 100%;
+  width: 60%;
   margin: 0 auto;
   margin-left:auto;
   margin-right:auto;
@@ -93,11 +94,17 @@
 }
  
 
-.showimage{
+.show-image{
   margin: 0 auto;
-  width:600px;
+  max-width: 80%;
   margin-left:auto;
   margin-right:auto;
+}
+.show-react{
+  margin: 0 auto;
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 50%;
 }
 
 

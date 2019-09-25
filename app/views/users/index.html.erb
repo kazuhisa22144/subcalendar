@@ -11,6 +11,7 @@
         <thead>
         </thead>
         <tbody>
+    <%= will_paginate @users, :previous_label => ' &lt 前へ', :next_label => '次へ &gt' %> 
           <% @users.each do |user| %>
           <tr class="box25">
               <td>
@@ -26,5 +27,6 @@
           <% end %>
         </tbody>
       </table>
+    <%= will_paginate @users, :previous_label => ' &lt 前へ', :next_label => '次へ &gt' %>
 </div>
 </div>

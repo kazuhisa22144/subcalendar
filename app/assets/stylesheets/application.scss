@@ -73,6 +73,13 @@ div {
    overflow-wrap: break-word;
    word-wrap: break-word;
    }
+table {
+   table-layout: fixed;
+}
+
+table tr {
+   word-break: break-word;
+}
 
 .login-box{
    width: 80%;

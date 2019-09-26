@@ -19,6 +19,9 @@
       <%= link_to "プロフィール編集", edit_user_path(@user), class: "btn-circle-border-double" %>
     </p>
 
+    <div id="result">
+    </div>
+
     <div class="btn-circle-border-double">
     <div id="target"></div>
     <a href="" id="ss" download="html_ss.png">スクリーンショット</a>
@@ -34,6 +37,7 @@
                   //imgタグのsrcの中に、html2canvasがレンダリングした画像を指定する。
                   var imgData = canvas.toDataURL();
                   document.getElementById("result").src = imgData;
+                  alert(imgData);
                 }
               });
 

@@ -6,7 +6,7 @@
 <div class="profile-container">
   <div class="profile-image">
       <h3 class="profile-name"><%= @user.name %></h3>
-      <%= attachment_image_tag @user, :profile_image, :fill, 60, 60, format: 'jpeg', class: "img-circle pull-left profile-img", fallback: "no_image.jpg" %>
+      <%= attachment_image_tag @user, :profile_image, :fill, 60, 60, format: 'jpeg', class: "img-circle pull-left profile-img", fallback: "/images/no_image.jpg" %>
   </div>
   <% if @user.id == current_user.id %>
     <div class="calendarbox">

@@ -1,5 +1,5 @@
 current directory: /vagrant/subcalendar/vendor/bundle/ruby/2.5.0/gems/mysql2-0.5.2/ext/mysql2
-/usr/bin/ruby2.5 -r ./siteconf20190928-28308-1y7phy.rb extconf.rb
+/usr/bin/ruby2.5 -r ./siteconf20190928-28919-s4c9r0.rb extconf.rb
 checking for rb_absint_size()... yes
 checking for rb_absint_singlebit_p()... yes
 checking for rb_wait_for_single_fd()... yes

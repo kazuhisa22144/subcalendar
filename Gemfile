@@ -72,9 +72,9 @@ gem 'fullcalendar-rails'
 gem 'kaminari'
 gem 'will_paginate',           '3.1.7'
 gem 'bootstrap-will_paginate', '1.0.0'
-
+gem 'mysql2'
 group :production do
   gem 'json'
-  gem 'mysql2'
+
   gem 'listen', '>= 3.0.5', '< 3.2'
 end

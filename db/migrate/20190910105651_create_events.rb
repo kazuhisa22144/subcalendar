@@ -1,6 +1,6 @@
 class CreateEvents < ActiveRecord::Migration[5.2]
   def change
-    create_table :events do |t|
+    create_table :events, :options => 'ENGINE=InnoDB ROW_FORMAT=DYNAMIC' do |t|
       t.integer :user_id
       t.string :title
       t.boolean :disp_flg

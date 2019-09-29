@@ -12,14 +12,11 @@
                   </thead>
                   <%= will_paginate @users, :previous_label => ' &lt 前へ', :next_label => '次へ &gt' %> 
                     <div class="row">
-
                       <% @users.each do |user| %>
                         <div class="col-lg-4 box25">
                           <div class="col-lg-6">
-
                               <%= attachment_image_tag user, :profile_image, :fill, 150, 150, format: 'jpeg', fallback:"/images/no_image.jpg",size: '100x100' %><br>
                           </div>
-
                           <div class="col-lg-6">
                               <%= user.name %><br>
                               <%= link_to "Show", user_path(user.id), class:"btn-flat-dashed-filled" %>
